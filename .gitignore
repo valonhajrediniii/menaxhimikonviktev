@@ -1,0 +1,17 @@
+# Maven
+/target/
+
+# IntelliJ
+/.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local runtime overrides
+/src/main/resources/config/database.local.properties
+
+# Local toolchains
+/.jdk/
+/.maven/
