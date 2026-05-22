@@ -10,6 +10,40 @@ JavaFX desktop application for dormitory admission workflow, including authentic
 - Maven
 - JPMS (`module-info.java`)
 
+## First-Time Setup (Recommended Order)
+1. Clone the repository.
+
+```bash
+git clone https://github.com/valonhajrediniii/menaxhimikonviktev.git
+cd menaxhimikonviktev
+```
+
+2. Install Docker Desktop (or Docker Engine + Docker Compose plugin) and make sure Docker is running.
+
+3. Start database services (PostgreSQL + pgAdmin):
+
+```bash
+docker compose up -d
+```
+
+4. Start the JavaFX application:
+
+Windows (PowerShell/CMD):
+```powershell
+.\mvnw.cmd clean javafx:run
+```
+
+Git Bash:
+```bash
+./mvnw clean javafx:run
+```
+
+If you already have Maven installed globally, you can also use:
+
+```bash
+mvn clean javafx:run
+```
+
 ## Implemented Scope (MVP)
 
 ### Activity 1: Foundation + Auth
@@ -32,13 +66,7 @@ JavaFX desktop application for dormitory admission workflow, including authentic
 - Seed dormitories/rooms for immediate testing
 
 ## Run (CLI)
-```bash
-mvn clean javafx:run
-```
-
-If Maven is not installed globally, run through your Maven Wrapper from another project or install Maven first.
-
-Preferred (this project includes a local wrapper and JDK 21):
+Preferred (this project includes Maven Wrapper):
 
 Windows (PowerShell/CMD):
 ```powershell
